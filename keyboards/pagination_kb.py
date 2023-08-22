@@ -97,7 +97,7 @@ def create_lists_themes_buttons(page) -> InlineKeyboardMarkup:
                                                                   callback_data='weather')
 
     back_button: InlineKeyboardButton = InlineKeyboardButton(text='Назад ⬅️', callback_data=f'{page}')
-    lists_words_builder.row(button_colors, button_family,button_family, button_emotions, button_body, button_face,
+    lists_words_builder.row(button_colors, button_family, button_emotions, button_body, button_face,
                             button_health, button_education, button_weather,
                             width=2)
     lists_words_builder.row(back_button, width=1)
