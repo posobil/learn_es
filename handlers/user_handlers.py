@@ -97,7 +97,7 @@ async def process_verbs(callback: CallbackQuery):
     users_db[callback.from_user.id]['w_list'] = 'estar_pr'
     page = users_db[callback.from_user.id]['page']
     await callback.message.edit_text(
-            text=f'{LEXICON["/ser1"]} '
+            text=f'{LEXICON["/estar1"]} '
                  '<a href="https://telegra.ph/Glagol-ESTAR-s-prilagatelnymi-08-20"><u>Глагол ESTAR с прилагательными</u></a>\n\n'
                  f'{LEXICON["/verb_fin"]}', disable_web_page_preview=True,
             reply_markup=create_verb_rules_buttons(page))
